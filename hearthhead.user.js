@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hearthhead
 // @namespace    http://www.hearthhead.com/
-// @version      0.2
+// @version      1.1
 // @description  Counts missing cards
 // @author       Jean-Avit Promis
 // @match        http://*.hearthhead.com/collection
@@ -22,15 +22,15 @@ var goldTotal = 0;
 var goldTotalUnique = 0;
 var normalCard = 0;
 var normalCardUnique = 0;
-var totalCardUnique = {classic:0,naxx:0,go:0,blackrock:0,grand:0,explorer:0,all:0};
-var allTotalCardUnique = {classic:0,naxx:0,go:0,blackrock:0,grand:0,explorer:0,all:0};
+var totalCardUnique = {};
+var allTotalCardUnique = {};
 var incomplete = 0;
 var missing = 0;
 var card = null;
 var ggt = null;
 var normal = 0;
 var gold = 0;
-var link = null
+var link = null;
 var tab = null;
 var tabName = null;
 var extension = null;
@@ -59,6 +59,15 @@ for (var i = 0; i < cards.length; i++) {
         }
     }else{
         extension = 'all';
+    }
+    if( allTotalCardUnique[extension] === undefined ) {
+        allTotalCardUnique[extension] = 0;
+    }
+    if( totalCardUnique[extension] === undefined ) {
+        totalCardUnique[extension] = 0;
+    }
+    if( totalCardUnique['all'] === undefined ) {
+    	totalCardUnique['all'] = 0;
     }
     allTotalCardUnique[extension] += 1;
     ggt = card.getElementsByClassName('buttons');
