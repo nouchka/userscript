@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hearthhead
 // @namespace    http://www.hearthhead.com/
-// @version      0.1
+// @version      0.2
 // @description  Counts missing cards
 // @author       Jean-Avit Promis
 // @match        http://*.hearthhead.com/collection
@@ -52,6 +52,8 @@ for (var i = 0; i < cards.length; i++) {
             extension = 'grand';
         } else if (tabName == '20'){
             extension = 'explorer';
+        } else if (tabName == '21'){
+            extension = 'ogods';
         } else {
             extension = 'all';
         }
