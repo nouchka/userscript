@@ -18,6 +18,7 @@ function findAncestor (el, cls) {
 var cards = document.getElementsByClassName('cardline');
 var type = {q1:0,q2:0,q3:0,q4:0,q5:0};
 var allType = {q1:0,q2:0,q3:0,q4:0,q5:0};
+var price = {q1:0,q2:0,q3:100,q4:400,q5:1600};
 var goldTotal = 0;
 var goldTotalUnique = 0;
 var normalCard = 0;
@@ -34,6 +35,11 @@ var link = null;
 var tab = null;
 var tabName = null;
 var extension = null;
+var dust = 0;
+var dustLegend = 0;
+var ogods = {q1:0,q2:0,q3:0,q4:0,q5:0};
+var classic = {q1:0,q2:0,q3:0,q4:0,q5:0};
+var need = 0;
 
 for (var i = 0; i < cards.length; i++) {
     card = cards[i];
@@ -94,6 +100,23 @@ for (var i = 0; i < cards.length; i++) {
         }
         incomplete += 1;
     }
+    if (extension == 'classic' || extension == 'ogods') {
+        if (link[0].getAttribute("class") == 'q5') {
+            need = (1-normal);
+        } else {
+            need = (2-normal);
+        }
+        if (extension == 'classic') {
+            classic[link[0].getAttribute("class")] += need;
+        } else {
+            ogods[link[0].getAttribute("class")] += need;
+        }
+        if (link[0].getAttribute("class") == 'q5') {
+            dustLegend += (1-normal)*price[link[0].getAttribute("class")];
+        } else {
+            dust += (2-normal)*price[link[0].getAttribute("class")];
+        }
+    }
 }
 console.log('Missing: '+missing);
 console.log('Incomplete: '+incomplete);
@@ -108,3 +131,9 @@ console.log('Total: '+totalCardUnique['all']);
 console.log('Total availa: '+cards.length);
 console.log(type);
 console.log(allType);
+console.log(dust);
+console.log(dustLegend);
+console.log('classic');
+console.log(classic);
+console.log('ogods');
+console.log(ogods);
