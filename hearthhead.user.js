@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hearthhead
 // @namespace    http://www.hearthhead.com/
-// @version      1.1
+// @version      1.2
 // @description  Counts missing cards
 // @author       Jean-Avit Promis
 // @match        http://*.hearthhead.com/collection
