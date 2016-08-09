@@ -2,6 +2,7 @@
 // @name         Facebook styling
 // @namespace    http://www.katagena.com/
 // @version      0.4
+// @version      0.3
 // @description  no right column, fixed japan background
 // @author       Jean-Avit Promis
 // @match        https://www.facebook.com/
