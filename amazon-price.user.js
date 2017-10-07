@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Amazon link to camel
 // @namespace    http://www.amazon.fr/
-// @version      1.2
+// @version      1.3
 // @description  Link to camel website
 // @author       Jean-Avit Promis
 // @match        https://www.amazon.fr/*
