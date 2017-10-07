@@ -25,7 +25,7 @@ function main() {
 	jQ(document).ready(function(){
 		if (jQ('input#add-to-cart-button').length ) {
 			console.log("Add Camel link");
-			jQ('span#price-shipping-message').append('<a href="https://fr.camelcamelcamel.com/search?sq=https%3A%2F%2Fwww.amazon.fr%2F'+window.location.pathname+'" target="_blank">Camel</a>');
+			jQ('tr#vatMessage span').append(' <a href="https://fr.camelcamelcamel.com/search?sq=https%3A%2F%2Fwww.amazon.fr%2F'+window.location.pathname+'" target="_blank">Camel</a>');
 		}
 	});
 }
