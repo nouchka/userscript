@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         Facebook styling
 // @namespace    http://www.katagena.com/
-// @version      0.10
+// @version      0.11
 // @description  no right column, fixed japan background
 // @author       Jean-Avit Promis
+// @match        https://m.facebook.com/*
 // @match        https://www.facebook.com/*
 // @grant        GM_addStyle
 // ==/UserScript==
@@ -11,5 +12,14 @@
 (function() {
     'use strict';
 
-    GM_addStyle("body{background-image: url('//www.katagena.com/wallpaper.jpg') !important;background-attachment: fixed !important;}#contentCol{width: 502px;}#rightCol{display:none;}.countValue{display: none !important;}");
+    GM_addStyle("body{background-image: url('//www.katagena.com/wallpaper.jpg') !important;background-attachment: fixed !important;width: 800px;margin:0 auto;}");
+    var metas = document.getElementsByTagName('meta');
+    var page_id = metas[4].getAttribute("content");
+    console.log(page_id);
+    var matches = page_id.match(/\d+/g);
+    var script = document.createElement('link');
+    script.rel = 'alternate';
+    script.type = 'application/rss+xml';
+    script.href = 'https://wallflux.com/feed/'+matches[0];
+    document.getElementsByTagName('head')[0].appendChild(script);
 })();
