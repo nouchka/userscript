@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Facebook styling
 // @namespace    http://www.katagena.com/
-// @version      0.11
+// @version      0.12
 // @description  no right column, fixed japan background
 // @author       Jean-Avit Promis
 // @match        https://m.facebook.com/*
@@ -12,7 +12,7 @@
 (function() {
     'use strict';
 
-    GM_addStyle("body{background-image: url('//www.katagena.com/wallpaper.jpg') !important;background-attachment: fixed !important;width: 800px;margin:0 auto;}");
+    GM_addStyle("body{background-image: url('//www.katagena.com/wallpaper.jpg') !important;background-attachment: fixed !important;}");
     var metas = document.getElementsByTagName('meta');
     var page_id = metas[4].getAttribute("content");
     console.log(page_id);
