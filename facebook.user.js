@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Facebook styling
-// @namespace    http://www.katagena.com/
+// @namespace    https://github.com/nouchka/userscript
 // @version      0.12
 // @description  no right column, fixed japan background
 // @author       Jean-Avit Promis

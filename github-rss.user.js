@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         GitHub releases feed
-// @namespace    https://github.com/
+// @namespace    https://github.com/nouchka/userscript
 // @version      0.1
 // @description  Add Atom feed link for releases on top on project page
 // @author       Jean-Avit Promis

@@ -1,10 +1,11 @@
 // ==UserScript==
-// @name           Add RSS from stagram.com
-// @version        1.0
-// @author         nouchka
-// @run-at         document-end
-// @include        https://www.instagram.com/*
-// @require        http://code.jquery.com/jquery-2.1.0.min.js
+// @name         Add RSS from stagram.com
+// @namespace    https://github.com/nouchka/userscript
+// @version      1.0
+// @author       nouchka
+// @run-at       document-end
+// @include      https://www.instagram.com/*
+// @require      http://code.jquery.com/jquery-2.1.0.min.js
 // @grant        none
 // ==/UserScript==
 

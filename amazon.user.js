@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Amazon price sum
-// @namespace    http://www.amazon.fr/
+// @namespace    https://github.com/nouchka/userscript
 // @version      1.1
 // @description  Cost of wishlist
 // @author       Jean-Avit Promis

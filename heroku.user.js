@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Heroku Free Dyno Usage
-// @namespace    https://www.heroku.com/
+// @namespace    https://github.com/nouchka/userscript
 // @version      1.1
 // @description  % of the month
 // @author       Jean-Avit Promis

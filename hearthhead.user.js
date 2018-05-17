@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Hearthhead
-// @namespace    http://www.hearthhead.com/
+// @namespace    https://github.com/nouchka/userscript
 // @version      1.2
 // @description  Counts missing cards
 // @author       Jean-Avit Promis

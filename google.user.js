@@ -1,10 +1,11 @@
 // ==UserScript==
-// @name           No Google Search Redirect (Use Jquery)
-// @version        1.10
-// @author         imt
-// @run-at         document-end
-// @include        https://www.google.com/search*
-// @require        http://code.jquery.com/jquery-2.1.0.min.js
+// @name         No Google Search Redirect (Use Jquery)
+// @namespace    https://github.com/nouchka/userscript
+// @version      1.10
+// @author       imt
+// @run-at       document-end
+// @include      https://www.google.com/search*
+// @require      http://code.jquery.com/jquery-2.1.0.min.js
 // ==/UserScript== 
 
 

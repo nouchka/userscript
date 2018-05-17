@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Amazon link to camel
-// @namespace    http://www.amazon.fr/
+// @namespace    https://github.com/nouchka/userscript
 // @version      1.3
 // @description  Link to camel website
 // @author       Jean-Avit Promis
