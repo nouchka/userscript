@@ -11,5 +11,6 @@
 
 $(function(){
     //don't care if undefined
-    $("head").append('<link rel="alternate" type="application/rss+xml" title="Instagram RSS" href="https://web.stagram.com/rss/n/'+$($("h1")[0]).attr('title')+'/"/>');
+    //console.log($($("h1")[0]));
+    $("head").append('<link rel="alternate" type="application/rss+xml" title="Instagram RSS" href="https://web.stagram.com/rss/n/'+$($("h1")[0]).html()+'/"/>');
 });
