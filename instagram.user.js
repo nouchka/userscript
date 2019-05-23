@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Add RSS from stagram.com
 // @namespace    https://github.com/nouchka/userscript
-// @version      1.0
+// @version      1.1
 // @author       nouchka
 // @run-at       document-end
 // @include      https://www.instagram.com/*
