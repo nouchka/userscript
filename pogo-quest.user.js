@@ -34,6 +34,16 @@
                     $(marker._icon).find('div.pokemon_icon').css("background-color", "red");
                 }
             }
+            if (currentQuest.conditions_string == 'Catch 1 Pokémon (Type: Dragon)') {
+                if (typeof marker !== 'undefined') {
+                    $(marker._icon).find('div.pokemon_icon').css("background-color", "green");
+                }
+            }
+            if (currentQuest.conditions_string == 'Catch 1 Pokémon (Ditto)') {
+                if (typeof marker !== 'undefined') {
+                    $(marker._icon).find('div.pokemon_icon').css("background-color", "blue");
+                }
+            }
         };
         $('div.pokemon_icon').not('.ggt').hide();
     };
